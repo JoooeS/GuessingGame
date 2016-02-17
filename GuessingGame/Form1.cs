@@ -30,7 +30,7 @@ namespace GuessingGame
         {
             InitializeComponent();
 
-            label1.Text = Convert.ToString(rand);
+            label1.Text += Convert.ToString(rand);
         }
 
         private void guessButton_Click(object sender, EventArgs e)
