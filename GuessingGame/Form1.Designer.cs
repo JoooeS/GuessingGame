@@ -34,6 +34,7 @@
             this.inputBox = new System.Windows.Forms.TextBox();
             this.guessButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -87,17 +88,29 @@
             this.outputLabel.TabIndex = 4;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(16, 236);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.inputBox);
             this.Controls.Add(this.promptLabel);
             this.Controls.Add(this.titleLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Guessing Game";
@@ -113,6 +126,7 @@
         private System.Windows.Forms.TextBox inputBox;
         private System.Windows.Forms.Button guessButton;
         private System.Windows.Forms.Label outputLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 
